@@ -490,7 +490,7 @@ h4 span {
 }
 
 .select-primary {
-    /* background: transparent; */
+    background: transparent;
     border: none;
     color: #000000;
     -webkit-appearance: none;
@@ -502,6 +502,7 @@ h4 span {
     background-position: 100%;
     padding-right: 12px;
     cursor: pointer;
+    padding: 33px 12px;
 }
 
 .select-primary option {
@@ -2382,7 +2383,7 @@ a:hover {
 }
 
 #about-section .about-section-right {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     padding-left: 50px;
 }
 
@@ -5778,7 +5779,7 @@ a:hover {
 }
 
 .footer-two .footer-top {
-    padding: 100px 0 70px;
+    padding: 40px 0 20px;
     border-bottom: 1px solid #36363d;
 }
 
