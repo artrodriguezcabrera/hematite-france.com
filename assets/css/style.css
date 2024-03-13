@@ -503,6 +503,7 @@ h4 span {
     padding-right: 12px;
     cursor: pointer;
     padding: 33px 12px;
+    outline: none;
 }
 
 .select-primary option {
