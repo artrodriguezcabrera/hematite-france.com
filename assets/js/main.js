@@ -86,14 +86,44 @@
 
 
 		// Hero Slider Two
-		$('.hero-slider-two').owlCarousel({
-			loop: true,
-			dots: false,
-			nav: true,
-			navText: ["<img src='assets/img/icons/arrow-prev-short.png'>","<img src='assets/img/icons/arrow-next-short.png'>"],
-			responsiveClass: true,
-			items: 1,
-		});
+		if (language === "Francais") {
+			$('.hero-slider-two').owlCarousel({
+				loop: true,
+				dots: false,
+				nav: true,
+				autoplay:true,
+    		autoplayTimeout:4000,
+				navText: ["<img src='assets/img/icons/arrow-prev-short.png'>","<img src='assets/img/icons/arrow-next-short.png'>"],
+				responsiveClass: true,
+				items: 1,
+			});
+			$('.play').on('click',function(){
+				owl.trigger('play.owl.autoplay',[1000])
+			})
+			$('.stop').on('click',function(){
+					owl.trigger('stop.owl.autoplay')
+			})
+		} else {
+			$('.en').owlCarousel({
+				loop: true,
+				dots: false,
+				nav: true,
+				autoplay:true,
+    		autoplayTimeout:4000,
+				navText: ["<img src='../../assets/img/icons/arrow-prev-short.png'>","<img src='../../assets/img/icons/arrow-next-short.png'>"],
+				responsiveClass: true,
+				items: 1,
+			});
+			$('.play').on('click',function(){
+				owl.trigger('play.owl.autoplay',[1000])
+			})
+			$('.stop').on('click',function(){
+					owl.trigger('stop.owl.autoplay')
+			})
+		}
+
+		console.log("Lang", language);
+
 
 		// Hero Slider Two Animation
 		$(".hero-slider-two").on("translated.owl.carousel", function() {

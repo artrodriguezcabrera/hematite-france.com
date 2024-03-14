@@ -226,19 +226,31 @@
 
             if (pgwSlider.slideCount == 0) {
                 throw new Error('PgwSlider - No slider item has been found');
-                return false;
             }
 
             // Add controls
-            if (pgwSlider.config.displayControls && pgwSlider.slideCount > 1) {
-                pgwSlider.plugin.find('.ps-current').prepend('<span class="ps-prev"><img src="assets/img/icons/arrow-prev-small.png" /></span>');
-                pgwSlider.plugin.find('.ps-current').append('<span class="ps-next"><img src="assets/img/icons/arrow-next-small.png" /></span>');
-                pgwSlider.plugin.find('.ps-current .ps-prev').click(function() {
-                    pgwSlider.previousSlide();
-                });
-                pgwSlider.plugin.find('.ps-current .ps-next').click(function() {
-                    pgwSlider.nextSlide();
-                });
+            if (language === "Francais") {
+                if (pgwSlider.config.displayControls && pgwSlider.slideCount > 1) {
+                    pgwSlider.plugin.find('.ps-current').prepend('<span class="ps-prev"><img src="assets/img/icons/arrow-prev-small.png" /></span>');
+                    pgwSlider.plugin.find('.ps-current').append('<span class="ps-next"><img src="assets/img/icons/arrow-next-small.png" /></span>');
+                    pgwSlider.plugin.find('.ps-current .ps-prev').click(function() {
+                        pgwSlider.previousSlide();
+                    });
+                    pgwSlider.plugin.find('.ps-current .ps-next').click(function() {
+                        pgwSlider.nextSlide();
+                    });
+                }
+            } else {
+                if (pgwSlider.config.displayControls && pgwSlider.slideCount > 1) {
+                    pgwSlider.plugin.find('.ps-current').prepend('<span class="ps-prev"><img src="../../assets/img/icons/arrow-prev-small.png" /></span>');
+                    pgwSlider.plugin.find('.ps-current').append('<span class="ps-next"><img src="../../assets/img/icons/arrow-next-small.png" /></span>');
+                    pgwSlider.plugin.find('.ps-current .ps-prev').click(function() {
+                        pgwSlider.previousSlide();
+                    });
+                    pgwSlider.plugin.find('.ps-current .ps-next').click(function() {
+                        pgwSlider.nextSlide();
+                    });
+                }
             }
 
             // Disable list
@@ -587,7 +599,6 @@
 
             if (typeof element == 'undefined') {
                 throw new Error('PgwSlider - The element ' + elementId + ' is undefined');
-                return false;
             }
 
             if (typeof direction == 'undefined') {
