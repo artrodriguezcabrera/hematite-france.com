@@ -283,6 +283,16 @@ a {
     width: 100%;
 }
 
+#about {
+    scroll-margin-top: 200px;
+}
+#brands {
+    scroll-margin-top: 200px; 
+}
+#locations{
+    scroll-margin-top: 200px; 
+}
+
 
 /*
 * ====================================
@@ -315,10 +325,11 @@ h2 {
 .small-primary {
     font-family: 'Heebo', sans-serif;
     font-size: 22px;
-    color: #c79153;
+    color: #590015;
     font-weight: 500;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    margin-top: 24px;
 }
 
 .small-primary span {
@@ -336,9 +347,9 @@ h3 {
 
 .small-secondary {
     font-family: 'Barlow', sans-serif;
-    font-size: 17px;
+    font-size: 14px;
     color: #c79153;
-    font-weight: 600;
+    /* font-weight: 600; */
     display: block;
     margin-bottom: 10px;
 }
@@ -508,6 +519,10 @@ h4 span {
 
 .select-primary option {
     color: #333333;
+}
+
+.select-primary option:hover {
+    color: #590015
 }
 
 .section-header {
@@ -846,6 +861,7 @@ a:hover {
     float: right;
     font-family: 'Heebo', sans-serif;
     font-weight: 400;
+    padding: 28px 0;
 }
 
 .header-two .header-menu>ul {
@@ -878,7 +894,7 @@ a:hover {
 }
 
 .header-two .header-menu>ul>li>a:hover {
-    color: #c79153;
+    color: #590015;
     text-decoration: none;
 }
 
@@ -2483,7 +2499,7 @@ a:hover {
 }
 
 #about-section-two .about-section-right h2 {
-    margin-bottom: 40px;
+    margin-bottom: 12px;
 }
 
 #about-section-two .about-section-right .lead {
@@ -2850,7 +2866,7 @@ a:hover {
 
 #portfolio-section-two .portfolio-item-controls button {
     background: transparent;
-    color: #666666;
+    color: #181818;
     border: none;
     cursor: pointer;
 }
@@ -2865,7 +2881,8 @@ a:hover {
 }
 
 #portfolio-section-two .portfolio-item-controls button.active {
-    color: #c79153;
+    color: #590015;
+    font-weight: bold;
 }
 
 #portfolio-section-two .portfolio-item,
@@ -5905,7 +5922,7 @@ a:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #c79153;
+    background: #590015;
     width: 50px;
     height: 50px;
     cursor: pointer;
