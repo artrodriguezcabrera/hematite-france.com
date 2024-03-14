@@ -851,10 +851,11 @@ a:hover {
 .header-two .header-logo {
     display: inline-block;
     vertical-align: top;
-    padding: 28px 0;
+    padding: 20px 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    max-width: 400px;
 }
 
 .header-two .header-menu {
