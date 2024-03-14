@@ -861,7 +861,7 @@ a:hover {
     float: right;
     font-family: 'Heebo', sans-serif;
     font-weight: 400;
-    padding: 28px 0;
+    /* padding: 28px 0; */
 }
 
 .header-two .header-menu>ul {
@@ -2869,6 +2869,9 @@ a:hover {
     color: #181818;
     border: none;
     cursor: pointer;
+}
+#portfolio-section-two .portfolio-item-controls button:hover {
+    color: #590015;
 }
 
 #portfolio-section-two .portfolio-item-controls button span {
