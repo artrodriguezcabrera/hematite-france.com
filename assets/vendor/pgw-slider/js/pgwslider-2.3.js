@@ -227,6 +227,8 @@
             if (pgwSlider.slideCount == 0) {
                 throw new Error('PgwSlider - No slider item has been found');
             }
+            		//About Change/Hide Copy on image change
+
 
             // Add controls
             if (language === "Francais") {
@@ -235,9 +237,11 @@
                     pgwSlider.plugin.find('.ps-current').append('<span class="ps-next"><img src="assets/img/icons/arrow-next-small.png" /></span>');
                     pgwSlider.plugin.find('.ps-current .ps-prev').click(function() {
                         pgwSlider.previousSlide();
+                        aboutTextToggle();
                     });
                     pgwSlider.plugin.find('.ps-current .ps-next').click(function() {
                         pgwSlider.nextSlide();
+                        aboutTextToggle();
                     });
                 }
             } else {
@@ -246,9 +250,11 @@
                     pgwSlider.plugin.find('.ps-current').append('<span class="ps-next"><img src="../../assets/img/icons/arrow-next-small.png" /></span>');
                     pgwSlider.plugin.find('.ps-current .ps-prev').click(function() {
                         pgwSlider.previousSlide();
+                        aboutTextToggle();
                     });
                     pgwSlider.plugin.find('.ps-current .ps-next').click(function() {
                         pgwSlider.nextSlide();
+                        aboutTextToggle();
                     });
                 }
             }
@@ -365,9 +371,11 @@
                             if (e.originalEvent.touches[0].clientX > (pgwSlider.touchFirstPosition + 50)) {
                                 pgwSlider.touchFirstPosition = null;
                                 pgwSlider.previousSlide();
+                                aboutTextToggle();
                             } else if (e.originalEvent.touches[0].clientX < (pgwSlider.touchFirstPosition - 50)) {
                                 pgwSlider.touchFirstPosition = null;
                                 pgwSlider.nextSlide();
+                                aboutTextToggle();
                             }
                         }
                     } catch(e) {
@@ -639,10 +647,13 @@
                 pgwSlider.intervalEvent = setInterval(function() {
                     if (pgwSlider.currentSlide + 1 <= pgwSlider.slideCount) {
                         var nextItem = pgwSlider.currentSlide + 1;
+                        aboutTextToggle();
                     } else {
                         var nextItem = 1;
+                        aboutTextToggle();
                     }
                     displayElement(nextItem);
+                    
                 }, pgwSlider.config.intervalDuration);
             }
 
@@ -756,6 +767,13 @@
 
             return true;
         };
+
+        function aboutTextToggle() {
+            var who = document.getElementById("about-who");
+            var simon = document.getElementById("about-simon");
+            who.classList.toggle("about-hide");
+            simon.classList.toggle("about-hide")
+        }
 
         // Slider initialization
         init();
