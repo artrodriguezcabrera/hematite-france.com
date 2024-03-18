@@ -113,6 +113,8 @@ a {
     display: table;
     width: 100%;
     height: 100%;
+    position: absolute;
+    z-index: 15;
 }
 
 .d-table-cell {
@@ -1971,7 +1973,7 @@ a:hover {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
+    z-index: 10;
 }
 
 #hero-section-two .hero-slider-item {
@@ -1981,8 +1983,18 @@ a:hover {
     background-size: cover;
     background-position: center;
     position: relative;
-    z-index: 10;
+    z-index: 15;
     overflow: hidden;
+}
+
+#hero-section-two .hero-slider-item video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
 
 #hero-section-two .hero-slider-item.bg-one {
