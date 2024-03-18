@@ -2528,6 +2528,11 @@ a:hover {
     margin-top: 30px;
 }
 
+.about-hide {
+    display: none;
+    transition: ease-out;
+}
+
 
 /*
 * ====================================
