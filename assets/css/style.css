@@ -1997,6 +1997,14 @@ a:hover {
     object-fit: cover;
 }
 
+#hero-section-two .hero-slider-item .page-not-found h1 {
+    font-size: 120px;
+}
+#hero-section-two .hero-slider-item .page-not-found h2 {
+    font-size: 30px;
+    color: white;
+}
+
 #hero-section-two .hero-slider-item.bg-one {
     background-image: url("../img/hero-slider/4.jpg");
 }
