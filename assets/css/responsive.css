@@ -479,7 +479,7 @@
 		padding: 5px 0;
 	}
 	.header-two .header-logo {
-		width: 100px;
+		width: 250px;
 		padding: 5px 0;
 	}
 	.header-two.sticky.active .header-logo {
@@ -500,7 +500,7 @@
 		position: absolute;
 		left: 0;
 		background: none;
-		top: 40px;
+		top: 52px;
 		z-index: 10;
 	}
 	.header-two .slicknav_menu {
@@ -511,7 +511,7 @@
 		margin: 0;
 		background-color: #590015;
 		margin-right: 5px;
-		margin-top: -32px;
+		margin-top: -40px;
 		border-radius: 0;
 	}
 	.header-two .slicknav_menu .slicknav_icon-bar {
@@ -522,6 +522,13 @@
 		background: #b87f3d;
 		color: #ffffff;
 	}
+
+	.select-primary {
+    color: #ffffff;
+		padding: 5px 10px;
+    margin: 2px 5px 10px;
+		background-image: url(../img/icons/arrow-down.png);
+}
 	/*
 	* ====================================
 	*  Header Three
@@ -643,7 +650,7 @@
 		margin-top: -16px;
 	}
 	#hero-section-two .owl-prev img {
-		width: 40px;
+		width: 20px;
 	}
 	#hero-section-two .owl-next {
 		position: absolute;
@@ -652,7 +659,12 @@
 		margin-top: -16px;
 	}
 	#hero-section-two .owl-next img {
-		width: 40px;
+		width: 20px;
+	}
+	#hero-section-two h1 {
+		font-size: 35px;
+		max-width: 80vw;
+		margin: 0 auto;
 	}
 	/*
 	* ====================================
@@ -758,6 +770,9 @@
 	}
 	#about-section .about-section-right .button-primary {
 	    margin-top: 15px;
+	}
+	#about-section .about-section-left {
+		text-align: left !important;
 	}
 	/*
 	* ====================================
@@ -920,14 +935,14 @@
 	* ====================================
 	*/
 	#portfolio-section-two {
-	    padding: 60px 0 0;
+	    padding: 60px 0 60px;
 	}
 	#portfolio-section-two .portfolio-item-controls {
 	    margin: 20px 0 30px;
 	}
 	#portfolio-section-two .portfolio-item,
 	#portfolio-section-two .portfolio-item-sizer {
-		width: 50%;
+		width: 25%;
 	}
 	#portfolio-section-two .portfolio-item .overlay a {
 		width: 40px;
@@ -939,10 +954,16 @@
 		transform: translateX(20px);
 	}
 	#portfolio-section-two .portfolio-item .overlay .title {
-		left: 20px;
+		left: 5px;
 	}
 	#portfolio-section-two .portfolio-item:hover .overlay .title {
 		bottom: 20px;
+	}
+	#portfolio-section-two .portfolio-item .overlay .title .small-secondary {
+		display: none;
+	}
+	#portfolio-section-two .portfolio-item .overlay .title h3 {
+		font-size: 12px;
 	}
 	/*
 	* ====================================
@@ -1352,6 +1373,9 @@
 	.footer-two .footer-bottom,
 	.footer-two .footer-bottom .footer-bottom-right {
 		text-align: center;
+	}
+	.footer-two #mobilefooter-center {
+		text-align: center !important;
 	}
 	/*
 	* ====================================
