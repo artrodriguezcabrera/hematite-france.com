@@ -2889,11 +2889,6 @@ a:hover {
 */
 #portfolio-section-two {
     padding: 100px 0 140px;
-    background: #776254;
-}
-
-#portfolio-section-two h2{
-    color: white;
 }
 
 #portfolio-section-two .portfolio-item-controls {
@@ -2906,7 +2901,7 @@ a:hover {
 
 #portfolio-section-two .portfolio-item-controls button {
     background: transparent;
-    color: white;
+    color: #181818;
     border: none;
     cursor: pointer;
 }
