@@ -519,12 +519,17 @@ h4 span {
     outline: none;
 }
 
+.select-primary:hover {
+    color: #590015;
+
+}
+
 .select-primary option {
-    color: #333333;
+    color: #590015;
 }
 
 .select-primary option:hover {
-    color: #590015
+    color: #590015;
 }
 
 .section-header {
