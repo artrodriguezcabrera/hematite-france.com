@@ -25,7 +25,7 @@
             afterSlide : null,
             adaptiveDuration : 200,
             transitionDuration : 500,
-            intervalDuration : 7000
+            intervalDuration : 20000
         };
 
         if (this.length == 0) {
