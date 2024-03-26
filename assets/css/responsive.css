@@ -66,6 +66,10 @@
 	*  About Section Two
 	* ====================================
 	*/
+	#about-section-two {
+		min-height: 790px;
+		padding-bottom: 0;
+	}
 	#about-section-two .about-section-left .text-box {
 		margin-top: 10px;
 	}
