@@ -785,6 +785,7 @@
 	*/
 	#about-section-two {
 	    padding: 60px 0;
+			height: unset;
 	}
 	#about-section-two .about-section-left {
 		max-width: 360px;
@@ -800,7 +801,8 @@
 	}
 	#about-section-two .about-section-right {
 		padding-top: 0;
-		margin-bottom: 60px;
+		margin-bottom: 0px;
+		min-height: 700px;
 	}
 	#about-section-two .about-section-right h2 {
 		margin-bottom: 20px;

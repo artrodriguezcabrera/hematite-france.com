@@ -2455,6 +2455,7 @@ a:hover {
 */
 #about-section-two {
     padding: 100px 0;
+    height: 80vh;
 }
 
 #about-section-two .about-section-left {
