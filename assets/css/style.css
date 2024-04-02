@@ -96,6 +96,7 @@ Template.
 * ====================================
 */
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,600|Heebo:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap');
 html,
 body {
     min-height: 100%;
@@ -302,33 +303,53 @@ a {
 * ====================================
 */
 body {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 16px;
-    line-height: 1.5em;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    line-height: 24px;
     color: #666666;
     overflow-x: hidden;
-    font-weight: 400;
 }
 
 h1 {
-    font-family: 'Heebo', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 60px;
-    font-weight: 700;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    line-height: 70px;
 }
 
 h2 {
-    font-family: 'Heebo', sans-serif;
+    font-family: "Noto Serif", serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    line-height: 32px;
     color: #333333;
-    font-size: 40px;
-    font-weight: 700;
     margin-bottom: 20px;
 }
 
 .small-primary {
-    font-family: 'Heebo', sans-serif;
-    font-size: 22px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    line-height: 24px;
+    text-transform: uppercase;
     color: #590015;
-    font-weight: 500;
     display: block;
     margin-bottom: 12px;
     margin-top: 24px;
@@ -340,16 +361,27 @@ h2 {
 }
 
 h3 {
-    font-family: 'Heebo', sans-serif;
-    color: #333333;
-    font-size: 18px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-optical-sizing: auto;
     font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    /* line-height: 24px; */
+    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 .small-secondary {
-    font-family: 'Barlow', sans-serif;
-    font-size: 12px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    line-height: 14px;
     color: #c79153;
     /* font-weight: 600; */
     display: block;
@@ -866,9 +898,14 @@ a:hover {
 }
 
 .header-two .header-menu {
-    float: right;
-    font-family: 'Heebo', sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
     font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    float: right;
     /* padding: 28px 0; */
 }
 
@@ -2982,7 +3019,7 @@ a:hover {
 
 #portfolio-section-two .portfolio-item .overlay .title {
     position: absolute;
-    left: 15px;
+    left: 10px;
     bottom: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
