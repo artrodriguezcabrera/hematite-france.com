@@ -2459,11 +2459,10 @@ a:hover {
 * ====================================
 */
 #about-section {
-    padding: 100px 0;
+    padding: 0 0 100px;
 }
 
 #about-section .about-section-right {
-    /* padding-top: 60px; */
     padding-left: 50px;
 }
 
@@ -2480,7 +2479,7 @@ a:hover {
 }
 
 #about-section .about-section-left {
-    padding-top: 30px;
+    padding-top: 80px;
     text-align: right;
 }
 

@@ -777,6 +777,7 @@
 	}
 	#about-section .about-section-left {
 		text-align: left !important;
+		padding-top: unset;
 	}
 	/*
 	* ====================================
