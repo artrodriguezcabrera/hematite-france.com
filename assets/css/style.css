@@ -2482,6 +2482,11 @@ a:hover {
     padding-top: 80px;
     text-align: right;
 }
+#about-section .about-section-left .gem {
+    width: 8px;
+    vertical-align: baseline;
+    margin-right: 6px;
+}
 
 
 /*
