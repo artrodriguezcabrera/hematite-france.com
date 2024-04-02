@@ -5936,6 +5936,7 @@ a:hover {
 .footer-logo{
     -webkit-filter: grayscale(1) invert(1);
     filter: grayscale(1) invert(1);
+    max-width: 164px;
 }
 
 
