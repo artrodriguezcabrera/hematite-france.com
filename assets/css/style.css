@@ -316,7 +316,7 @@ body {
 }
 
 h1 {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Serif", serif;
     font-size: 60px;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -340,7 +340,7 @@ h2 {
 }
 
 .small-primary {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Serif", serif;
     font-size: 18px;
     font-optical-sizing: auto;
     font-weight: 700;
