@@ -134,8 +134,8 @@ ul.pgwSlider > li img,
     filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";
     position: absolute;
-    right: 80px;
-    bottom: 0;
+    right: 110px;
+    bottom: 13px;
     cursor: pointer;
 }
 
@@ -158,8 +158,8 @@ ul.pgwSlider > li img,
     filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 30px;
+    bottom: 13px;
     cursor: pointer;
 }
 

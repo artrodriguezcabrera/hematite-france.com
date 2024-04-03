@@ -2496,7 +2496,7 @@ a:hover {
 */
 #about-section-two {
     padding: 100px 0;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 #about-section-two .about-section-left {
@@ -2569,6 +2569,7 @@ a:hover {
 
 #about-section-two .about-section-right {
     padding-top: 10px;
+    text-align: justify;
 }
 
 #about-section-two .about-section-right h2 {
@@ -2587,6 +2588,10 @@ a:hover {
     display: none;
     transition: ease-out;
 }
+#about-section-two .about-section-right #about-who, #about-section-two .about-section-right #about-simon {
+    margin-top: 40px;
+}
+
 
 
 /*

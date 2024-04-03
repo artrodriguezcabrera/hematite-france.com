@@ -804,6 +804,7 @@
 		padding-top: 0;
 		margin-bottom: 0px;
 		min-height: 700px;
+		text-align: left;
 	}
 	#about-section-two .about-section-right h2 {
 		margin-bottom: 20px;
@@ -813,6 +814,31 @@
 	}
 	#about-section-two .about-section-right .button-primary {
 		margin-top: 15px;
+	}
+
+	#about-section-two .about-section-left .pgwSlider {
+    bottom: 21px;
+    right: 42px;
+	}
+
+	.pgwSlider .ps-current .ps-prev {
+		right: 80px;
+    bottom: 0px;
+	}
+	.pgwSlider .ps-current .ps-prev img {
+		width: 20px
+	}
+
+	.pgwSlider .ps-current .ps-next {
+		right: 0px;
+    bottom: 0px;
+	}
+	.pgwSlider .ps-current .ps-next img {
+		width: 20px;
+	}
+
+	#about-section-two .about-section-left .image-box {
+		padding-right: unset;
 	}
 	/*
 	* ====================================
