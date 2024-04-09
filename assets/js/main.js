@@ -110,7 +110,7 @@
 				nav: true,
 				autoplay:true,
     		autoplayTimeout:15000,
-				navText: ["<img src='../../assets/img/icons/arrow-prev-short.png'>","<img src='../../assets/img/icons/arrow-next-short.png'>"],
+				navText: ["<img src='../assets/img/icons/arrow-prev-short.png'>","<img src='../assets/img/icons/arrow-next-short.png'>"],
 				responsiveClass: true,
 				items: 1,
 			});
