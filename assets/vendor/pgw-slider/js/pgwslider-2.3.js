@@ -246,8 +246,8 @@
                 }
             } else {
                 if (pgwSlider.config.displayControls && pgwSlider.slideCount > 1) {
-                    pgwSlider.plugin.find('.ps-current').prepend('<span class="ps-prev"><img src="../../assets/img/icons/arrow-prev-small.png" /></span>');
-                    pgwSlider.plugin.find('.ps-current').append('<span class="ps-next"><img src="../../assets/img/icons/arrow-next-small.png" /></span>');
+                    pgwSlider.plugin.find('.ps-current').prepend('<span class="ps-prev"><img src="../assets/img/icons/arrow-prev-small.png" /></span>');
+                    pgwSlider.plugin.find('.ps-current').append('<span class="ps-next"><img src="../assets/img/icons/arrow-next-small.png" /></span>');
                     pgwSlider.plugin.find('.ps-current .ps-prev').click(function() {
                         pgwSlider.previousSlide();
                         aboutTextToggle();
