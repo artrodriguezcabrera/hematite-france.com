@@ -822,16 +822,16 @@
 	}
 
 	.pgwSlider .ps-current .ps-prev {
-		right: 80px;
-    bottom: 0px;
+		right: 87px;
+    bottom: 7px;
 	}
 	.pgwSlider .ps-current .ps-prev img {
 		width: 20px
 	}
 
 	.pgwSlider .ps-current .ps-next {
-		right: 0px;
-    bottom: 0px;
+		right: 7px;
+    bottom: 7px;
 	}
 	.pgwSlider .ps-current .ps-next img {
 		width: 20px;
