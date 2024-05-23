@@ -759,7 +759,7 @@
 	* ====================================
 	*/
 	#about-section {
-		padding: 60px 0;
+		padding: 60px 0 0;
 	}
 	#about-section .about-section-right {
 		padding-top: 0;
@@ -1105,7 +1105,7 @@
 	* ====================================
 	*/
 	#faq-section {
-		padding: 60px 0 40px;
+		padding: 0 0 40px;
 	}
 	#faq-section .faq-featured-image {
 		margin-bottom: 60px;
