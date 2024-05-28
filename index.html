@@ -680,7 +680,7 @@
                             <div class="card">
                                 <div class="card-header" id="headingOne">
                                   <p class="mb-0">
-                                    <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="scrollAccordion('collapseOne')">
                                       Bagages et maroquinerie
                                         <img class="arrow-icon" src="assets/img/icons/arrow-up-dark.png" alt="">
                                     </button>
@@ -738,7 +738,7 @@
                             <div class="card">
                                 <div class="card-header" id="headingThree">
                                   <h3 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="scrollAccordion('collapseThree')">
                                         Parfums
                                         <img class="arrow-icon" src="assets/img/icons/arrow-up-dark.png" alt="">
                                     </button>
@@ -795,7 +795,7 @@
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
                                   <h3 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="scrollAccordion('collapseTwo')">
                                       Bijoux et montres
                                         <img class="arrow-icon" src="assets/img/icons/arrow-up-dark.png" alt="">
                                     </button>
@@ -934,6 +934,22 @@
               },
               offset: 'bottom-in-view'
             })
+
+            function scrollAccordion(el) {
+                console.log(el);
+                var elClicked = $(`#${el}`);
+                var offset = $(`#${el}`).offset();
+                console.log(elClicked);
+                console.log(offset);
+                if(offset) {
+                    // console.log("zero!")
+                    $('html,body').animate({
+                        scrollTop: $(`#${el}`).offset().top
+                    }, 100);
+                    offset = null;
+                }
+            }
+
         </script>
 
     </body>
