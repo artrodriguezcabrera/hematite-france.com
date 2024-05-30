@@ -295,6 +295,9 @@ a {
 #locations{
     scroll-margin-top: 200px; 
 }
+#achievements {
+    scroll-margin-top: 200px;
+}
 
 
 /*
@@ -5371,7 +5374,7 @@ a:hover {
 * ====================================
 */
 #faq-section {
-    padding: 100px 0;
+    padding: 0 0 100px;
 }
 
 #faq-section .card {
@@ -5398,6 +5401,16 @@ a:hover {
     border: 1px solid rgba(0, 0, 0, .125);
     border-top: 0;
 }
+#faq-section .card .card-body .accordion-images {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+#faq-section .card .card-body .accordion-images img {
+    max-width: 300px !important;
+}
 
 #faq-section.background-dark .card .card-body {
     background: #222222;
@@ -5405,10 +5418,18 @@ a:hover {
     border-top: 0;
 }
 
+
+
 #faq-section .card .btn {
-    font-size: 20px;
-    font-weight: 500;
-    color: #333333;
+    font-family: "Noto Serif", serif;
+    font-size: 18px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    text-transform: uppercase;
+    color: #590015;
     padding: 0;
     width: 100%;
     text-align: left;
