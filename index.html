@@ -680,7 +680,7 @@
                             <div class="card">
                                 <div class="card-header" id="headingOne">
                                   <p class="mb-0">
-                                    <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="scrollAccordion('collapseOne')">
+                                    <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                       Bagages et maroquinerie
                                         <img class="arrow-icon" src="assets/img/icons/arrow-up-dark.png" alt="">
                                     </button>
@@ -736,15 +736,15 @@
                             </div>
 
                             <div class="card">
-                                <div class="card-header" id="headingThree">
+                                <div class="card-header" id="headingTwo">
                                   <h3 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="scrollAccordion('collapseThree')">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="scrollAccordionTwo()">
                                         Parfums
                                         <img class="arrow-icon" src="assets/img/icons/arrow-up-dark.png" alt="">
                                     </button>
                                   </h3>
                                 </div>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionOne">
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionOne">
                                   <div class="card-body">
                                     <div class="accordion-images">
                                         <div>
@@ -793,15 +793,15 @@
                             </div>
 
                             <div class="card">
-                                <div class="card-header" id="headingTwo">
+                                <div class="card-header" id="headingThree">
                                   <h3 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="scrollAccordion('collapseTwo')">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="scrollAccordionThree()">
                                       Bijoux et montres
                                         <img class="arrow-icon" src="assets/img/icons/arrow-up-dark.png" alt="">
                                     </button>
                                   </h3>
                                 </div>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionOne">
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionOne">
                                   <div class="card-body">
                                     <div class="accordion-images">
                                         <div>
@@ -935,20 +935,31 @@
               offset: 'bottom-in-view'
             })
 
-            function scrollAccordion(el) {
-                console.log(el);
-                var elClicked = $(`#${el}`);
-                var offset = $(`#${el}`).offset();
-                console.log(elClicked);
-                console.log(offset);
-                if(offset) {
-                    // console.log("zero!")
-                    $('html,body').animate({
-                        scrollTop: $(`#${el}`).offset().top
-                    }, 100);
-                    offset = null;
-                }
+            function scrollAccordionTwo(){
+                const element = document.getElementById("headingTwo");
+                console.log("el", element);
+                setTimeout(() => {
+                    // element.scrollIntoView(true);
+                    window.scrollTo({
+                        top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 130,
+                        behavior: 'smooth'
+                    });
+                }, 300);
             }
+
+            function scrollAccordionThree(){
+                const element = document.getElementById("headingThree");
+                console.log("el", element);
+                setTimeout(() => {
+                    // element.scrollIntoView(true);
+                    window.scrollTo({
+                        top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 130,
+                        behavior: 'smooth'
+                    });
+                }, 300);
+            }
+
+
 
         </script>
 

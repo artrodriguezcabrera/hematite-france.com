@@ -733,15 +733,15 @@
                             </div>
 
                             <div class="card">
-                                <div class="card-header" id="headingThree">
+                                <div class="card-header" id="headingTwo">
                                   <h3 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="scrollAccordionTwo()">
                                       Perfumes
                                         <img class="arrow-icon" src="../assets/img/icons/arrow-up-dark.png" alt="">
                                     </button>
                                   </h3>
                                 </div>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionOne">
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionOne">
                                   <div class="card-body">
                                     <div class="accordion-images">
                                         <div>
@@ -790,15 +790,15 @@
                             </div>
 
                             <div class="card">
-                                <div class="card-header" id="headingTwo">
+                                <div class="card-header" id="headingThree">
                                   <h3 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="scrollAccordionThree()">
                                       Watches and Jewels
                                         <img class="arrow-icon" src="../assets/img/icons/arrow-up-dark.png" alt="">
                                     </button>
                                   </h3>
                                 </div>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionOne">
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionOne">
                                   <div class="card-body">
                                     <div class="accordion-images">
                                         <div>
@@ -930,6 +930,30 @@
               },
               offset: 'bottom-in-view'
             })
+
+            function scrollAccordionTwo(){
+                const element = document.getElementById("headingTwo");
+                console.log("el", element);
+                setTimeout(() => {
+                    // element.scrollIntoView(true);
+                    window.scrollTo({
+                        top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 130,
+                        behavior: 'smooth'
+                    });
+                }, 300);
+            }
+
+            function scrollAccordionThree(){
+                const element = document.getElementById("headingThree");
+                console.log("el", element);
+                setTimeout(() => {
+                    // element.scrollIntoView(true);
+                    window.scrollTo({
+                        top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 130,
+                        behavior: 'smooth'
+                    });
+                }, 300);
+            }
         </script>
 
     </body>
