@@ -935,7 +935,6 @@
                 const element = document.getElementById("headingTwo");
                 console.log("el", element);
                 setTimeout(() => {
-                    // element.scrollIntoView(true);
                     window.scrollTo({
                         top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 130,
                         behavior: 'smooth'
@@ -944,14 +943,14 @@
             }
 
             function scrollAccordionThree(){
-                const element = document.getElementById("headingThree");
+                const element = document.getElementById("headingTwo");
                 console.log("el", element);
                 setTimeout(() => {
-                    // element.scrollIntoView(true);
-                    window.scrollTo({
-                        top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 130,
-                        behavior: 'smooth'
-                    });
+                    element.scrollIntoView(true);
+                    // window.scrollTo({
+                    //     top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 130,
+                    //     behavior: 'smooth'
+                    // });
                 }, 300);
             }
         </script>
